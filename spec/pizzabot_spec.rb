@@ -1,9 +1,13 @@
-RSpec.describe Pizzabot do
-  it "has a version number" do
-    expect(Pizzabot::VERSION).not_to be nil
-  end
+require_relative "../lib/pizzabot/delievery"
 
-  it "does something useful" do
-    expect(false).to eq(true)
+RSpec.describe Pizzabot do
+
+  describe '#process' do
+    let(:delievery) { Pizzabot.pizzabot("5x5 (1, 3) (4, 4)") }
+
+    it 'returns the correct directions' do
+      expect(delievery).to eq "ENNNDEEEND"
+    end
+
   end
 end
