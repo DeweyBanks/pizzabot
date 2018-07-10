@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Pizzabot.pizzabot("5x5 (1, 3) (4, 4)")
+Pizzabot.go("5x5 (1, 3) (4, 4)")
 ```
 
 ## Development
