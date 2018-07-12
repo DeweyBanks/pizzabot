@@ -1,5 +1,5 @@
 module Pizzabot
-  class Delievery
+  class Delivery
     attr_accessor  :coordinates, :starting_location, :directions, :grid
 
     def initialize(command)
