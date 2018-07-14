@@ -4,7 +4,7 @@ require_relative "pizzabot/delivery.rb"
 module Pizzabot
 
   def self.go(command)
-    Delivery.new(command).directions.join
+    Delivery.new(command)
   end
 
 end
